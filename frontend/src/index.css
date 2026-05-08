@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#qr-reader {
+  border: none;
+  background: #000;
+}
+#qr-reader__scan_region video {
+  object-fit: cover;
+}
+#qr-reader__dashboard {
+  display: none;
+}
+#qr-reader > div:nth-child(2) {
+  display: none;
+}
+@keyframes scanLine {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(258px); }
+  100% { transform: translateY(0px); }
+}
+
+#qr-reader__scan_region {
+  height: 300px !important;
+  overflow: hidden !important;
+}
+#qr-reader__scan_region video {
+  width: 300px !important;
+  height: 300px !important;
+  object-fit: cover !important;
+  max-height: 300px !important;
+}
+#qr-reader {
+  width: 300px !important;
+  height: 300px !important;
+  overflow: hidden !important;
+  max-height: 300px !important;
+}
